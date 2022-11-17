@@ -1,0 +1,88 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5000;
+  background-color: rgba(0, 0, 0, 0.75);
+  animation: open 300ms linear 1;
+  -webkit-animation: open 300ms linear 1;
+}
+
+.modal {
+  position: fixed;
+  max-height: 83vh;
+  top: 11vh;
+  left: 14%;
+  width: 70%;
+  z-index: 10000;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  overflow: auto;
+  animation: open 300ms linear 1;
+  -webkit-animation: open 300ms linear 1;
+}
+.backdrop > button {
+  position: absolute;
+  right: 12%;
+  top: 6%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 500ms border-color;
+  -webkit-transition: 500ms border-color;
+  -moz-transition: 500ms border-color;
+  -ms-transition: 500ms border-color;
+  -o-transition: 500ms border-color;
+  z-index: 100000000;
+}
+.backdrop > button > svg {
+  color: #fff;
+}
+.backdrop > button:hover {
+  border-color: rgba(255, 255, 255, 0.651);
+}
+.backdrop.isHome > button {
+  right: 10.5%;
+  top: 5%;
+}
+.modal.isHome {
+  top: 10vh;
+  max-height: 80vh;
+  width: 75%;
+  left: 11%;
+  box-shadow: 0px 0px 1px 1px #555555b8;
+}
+
+@keyframes open {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 992px) {
+  .modal:not(.isHome) {
+    top: 20vh;
+    width: 80%;
+    left: 10%;
+  }
+  .backdrop:not(.isHome) > button {
+    top: 15%;
+    right: 6%;
+  }
+}

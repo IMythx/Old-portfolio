@@ -1,0 +1,93 @@
+.nav {
+  position: fixed;
+  right: 30px;
+  top: 35.2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  z-index: 1000;
+}
+.nav li a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "overlap";
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #000;
+}
+.nav li a p {
+  grid-area: overlap;
+  opacity: 0;
+  border-radius: 100px;
+  margin-left: -4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition-property: opacity, margin-left;
+  color: #fff;
+}
+.nav li a svg {
+  grid-area: overlap;
+  padding: 0.9rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 3.2rem;
+  z-index: 10;
+  color: #fff;
+  background-color: #2b2a2a;
+}
+.nav li a.active svg,
+.nav li:hover a svg {
+  background-color: #ffb400;
+}
+
+.nav li:hover a p {
+  background-color: #ffb400;
+  opacity: 1;
+}
+.nav li:nth-child(1):hover a p {
+  margin-left: -5.2rem;
+}
+.nav li:nth-child(2):hover a p {
+  margin-left: -6rem;
+}
+.nav li:nth-child(3):hover a p {
+  margin-left: -7.2rem;
+}
+.nav li:nth-child(4):hover a p {
+  margin-left: -6.6rem;
+}
+@media (max-width: 992px) {
+  .nav {
+    flex-direction: row;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #2b2a2a;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+  .nav p {
+    display: none !important;
+  }
+  .nav li a svg {
+    background-color: #444;
+  }
+}

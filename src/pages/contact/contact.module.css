@@ -1,0 +1,209 @@
+.contact {
+  background-color: #111;
+  padding-top: 3.2rem;
+  min-height: 100vh;
+}
+.contact > div:last-child {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 3.5rem;
+  color: #fff;
+  margin: 3rem 0 6rem;
+  animation: raise 0.9s ease-in-out 1;
+  -webkit-animation: raise 0.9s ease-in-out 1;
+}
+
+.contact > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 68%;
+}
+.contact > div:last-child > div > h1 {
+  font-size: 1.7rem;
+}
+.contact > div:last-child > div > p {
+  width: 80%;
+  font-size: 1.1rem;
+}
+.contact > div:last-child > div > div:not(:last-child) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.contact > div:last-child > div > div:nth-of-type(1) > svg {
+  color: #ffb400;
+  font-size: 2.2rem;
+}
+.contact > div:last-child > div > div:nth-of-type(2) > svg {
+  background-color: #ffb400;
+  color: #111;
+  font-size: 2.2rem;
+  padding: 0.3rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.contact > div:last-child > div > div:not(:last-child) > span {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.3rem;
+}
+.contact > div:last-child > div > div:not(:last-child) > span h3 {
+  opacity: 0.7;
+  font-weight: 500;
+}
+.contact > div:last-child > div > div:not(:last-child) > span a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+}
+.contact > div:last-child > div > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact > div:last-child > div > div:last-child > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 0.7rem;
+  background-color: #2b2a2a;
+  transition: 300ms background-color;
+  -webkit-transition: 300ms background-color;
+  -moz-transition: 300ms background-color;
+  -ms-transition: 300ms background-color;
+  -o-transition: 300ms background-color;
+  cursor: pointer;
+}
+.contact > div:last-child > div > div:last-child > a:hover {
+  background-color: #ffb400;
+}
+.contact > div:last-child > div > div:last-child a > svg {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.contact > div:last-child > form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact > div:last-child > form fieldset {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex-basis: 100%;
+  border: none;
+}
+.contact > div:last-child > form input,
+.contact > div:last-child > form textarea {
+  padding: 1rem 1.5rem;
+  background-color: #252525;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  transition: 300ms outline-color;
+  -webkit-transition: 300ms outline-color;
+  -moz-transition: 300ms outline-color;
+  -ms-transition: 300ms outline-color;
+  -o-transition: 300ms outline-color;
+  color: #fff;
+  border: none;
+  cursor: none;
+  font-size: 0.9rem;
+}
+.contact > div:last-child > form fieldset:nth-child(1),
+.contact > div:last-child > form fieldset:nth-child(2) {
+  flex-basis: calc(50% - 1rem);
+}
+.contact > div:last-child > form fieldset > p {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.contact > div:last-child > form textarea {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.contact > div:last-child > form input:focus,
+.contact > div:last-child > form textarea:focus {
+  outline: 1px solid #ffb400;
+}
+.contact > div:last-child > form button {
+  margin-left: 0;
+}
+@keyframes raise {
+  from {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .contact > div:last-child {
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 0;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact > div:last-child > form fieldset:nth-child(1),
+  .contact > div:last-child > form fieldset:nth-child(2) {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 580px) {
+  .contact > div:last-child > div > h1 {
+    font-size: 1.4rem;
+  }
+  .contact > div:last-child > div {
+    width: 100%;
+  }
+  .contact > div:last-child > div > p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .contact > div:last-child > div > div:not(:last-child) > span h3 {
+    font-size: 1rem;
+  }
+  .contact > div:last-child > div > div:not(:last-child) > span a {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,38 @@
+.cursor > div:first-child {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffa001;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1000000000;
+  pointer-events: none;
+}
+.cursor > div:last-child {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  transform: translate(-20px, -20px);
+  -webkit-transform: translate(-20px, -20px);
+  -moz-transform: translate(-20px, -20px);
+  -ms-transform: translate(-20px, -20px);
+  -o-transform: translate(-20px, -20px);
+  background-color: #ffa0014d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 90ms ease-out;
+  -webkit-transition: 90ms ease-out;
+  -moz-transition: 90ms ease-out;
+  -ms-transition: 90ms ease-out;
+  -o-transition: 90ms ease-out;
+  transition-property: top, left;
+  transition-delay: -6ms;
+  z-index: 1000000;
+  pointer-events: none;
+}

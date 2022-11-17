@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
+:root {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  cursor: none;
+}
+
+::selection {
+  background-color: #cfa144 !important;
+  color: #fff !important;
+}
+.App {
+  position: relative;
+  overflow: hidden;
+}
+section {
+  overflow: hidden;
+}
+
+.btn {
+  border: 1px solid #ffb400;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+  background-color: transparent;
+  align-self: baseline;
+  padding-left: 2rem;
+  font-weight: 600;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-left: 4rem;
+}
+.btn::before {
+  content: "";
+  background-color: #ffb400;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  transition: 500ms all;
+  -webkit-transition: 500ms all;
+  -moz-transition: 500ms all;
+  -ms-transition: 500ms all;
+  -o-transition: 500ms all;
+  z-index: -1;
+}
+.btn:hover::before {
+  left: 0%;
+}
+.btn svg {
+  padding: 0.9rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 3.4rem;
+  color: #fff;
+  background-color: #ffb400;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

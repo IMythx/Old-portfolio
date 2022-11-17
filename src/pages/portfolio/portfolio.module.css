@@ -1,0 +1,119 @@
+.portfolio {
+  background-color: #111;
+  padding-top: 3.2rem;
+  min-height: 100vh;
+}
+.portfolio > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 2rem;
+  padding: 0 3rem;
+  margin: 3rem 0 6rem;
+  animation: raise 0.9s ease-in-out 1;
+  -webkit-animation: raise 0.9s ease-in-out 1;
+}
+.portfolio > ul > li {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.portfolio > ul > li > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.479);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio > ul > li > div:last-child > img {
+  width: 100%;
+  min-height: 100%;
+}
+.portfolio > ul:last-child > li > div:last-child:before {
+  content: "";
+  position: absolute;
+  background-color: #ffb400;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition-property: opacity transform;
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.portfolio > ul > li > div:last-child:hover::before {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio > ul > li:nth-child(1) > div:last-child::before {
+  content: "COMPANY-X";
+}
+.portfolio > ul > li:nth-child(2) > div:last-child::before {
+  content: "LOL-STATS";
+}
+.portfolio > ul > li:nth-child(3) > div:last-child::before {
+  content: "BAGS-SHOP";
+}
+.portfolio > ul > li:nth-child(4) > div:last-child::before {
+  content: "ADMIN-DASHBOARD";
+}
+.portfolio > ul > li:nth-child(5) > div:last-child::before {
+  content: "FOOD-ORDER-APP";
+}
+
+@keyframes raise {
+  from {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+    gap: 1.8rem;
+    grid-auto-rows: auto;
+  }
+}
+@media (max-width: 580px) {
+  .portfolio ul {
+    grid-template-columns: 1fr;
+  }
+}
