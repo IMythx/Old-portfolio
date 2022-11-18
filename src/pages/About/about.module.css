@@ -45,9 +45,10 @@
   font-weight: 600;
   color: #fff;
 }
-.about .rowOne > div:first-child button {
+.about .rowOne > div:first-child a {
   margin-left: 0.5rem;
   margin-top: 1rem;
+  text-decoration: none;
 }
 .about .rowOne > div:last-child {
   flex-direction: row;
@@ -174,7 +175,9 @@
   font-size: 1rem;
 }
 .about .rowThree > div > div > div:last-child p:nth-child(3) {
+  font-size: 0.9rem;
   opacity: 0.9;
+  margin-top: -0.9rem;
 }
 @keyframes raise {
   from {
@@ -212,12 +215,23 @@
   .about.isModal .rowTwo > div {
     grid-template-columns: repeat(2, 1fr);
   }
+  .about .rowThree {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .about .rowThree h1 {
+    text-align: start;
+  }
   .about .rowThree > div {
     flex-direction: column;
     align-items: flex-start;
+    row-gap: 3rem;
   }
   .about .rowThree > div > div:last-child {
     margin-left: 0;
+  }
+  .about .rowThree > div > div > div:last-child {
+    row-gap: 0.9rem;
   }
 }
 @media (max-width: 580px) {
@@ -234,20 +248,35 @@
     animation: raise 0.9s ease-in-out 1;
     -webkit-animation: raise 0.9s ease-in-out 1;
   }
+  .about.isModal .rowOne > div:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .about .img img {
     width: 100%;
     min-height: 100%;
+  }
+  .about:not(.isModal) .rowOne > div:last-child > div {
+    padding: 1rem;
+  }
+  .about.isModal .rowOne > div:last-child > div {
+    padding: 2rem;
+  }
+  .about .rowTwo {
+    align-items: flex-start;
+  }
+  .about .rowTwo h1 {
+    margin-left: 1.5rem;
+  }
+  .about .rowTwo > div {
+    grid-template-columns: repeat(2, 1fr);
   }
   .about .rowThree {
     padding: 0 1.5rem;
     margin-bottom: 7rem;
   }
-  .about .rowTwo h1 {
-    align-self: flex-start;
-    margin-left: 1.5rem;
-  }
-  .about .rowTwo > div {
-    grid-template-columns: repeat(2, 1fr);
+  .about.isModal .rowThree {
+    margin-bottom: 2rem;
   }
   .about .rowThree h1 {
     text-align: start;

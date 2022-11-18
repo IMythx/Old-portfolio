@@ -8,6 +8,7 @@ import ProgressCircle from "../../components/global/ProgressCircle";
 import InfoItem from "../../components/about/InfoItem";
 import useQuery from "../../hooks/mediaQueries";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import CV from "../../assets/mahmoud_helal_cv.pdf";
 
 const About = ({ isModal = false }) => {
   const { isMobile } = useQuery();
@@ -50,9 +51,9 @@ const About = ({ isModal = false }) => {
                 Languages: <span>Arabic, English</span>
               </p>
             </div>
-            <button className="btn">
+            <a className="btn" href={CV} download>
               DOWNLOAD CV <DownloadIcon />
-            </button>
+            </a>
           </div>
           <div>
             <InfoItem title={"1"} subTitle={"YEARS OF PROGRAMMING KNOWLEDGE"} />

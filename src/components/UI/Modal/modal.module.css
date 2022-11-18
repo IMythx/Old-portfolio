@@ -29,7 +29,7 @@
 .backdrop > button {
   position: absolute;
   right: 12%;
-  top: 6%;
+  top: 5%;
   border: 3px solid #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -57,7 +57,7 @@
 }
 .backdrop.isHome > button {
   right: 10.5%;
-  top: 5%;
+  top: 4%;
 }
 .modal.isHome {
   top: 10vh;
@@ -82,7 +82,13 @@
     left: 10%;
   }
   .backdrop:not(.isHome) > button {
-    top: 15%;
+    top: 13%;
     right: 6%;
+  }
+}
+@media (max-width: 580px) {
+  .backdrop.isHome > button {
+    right: 7%;
+    top: 3%;
   }
 }

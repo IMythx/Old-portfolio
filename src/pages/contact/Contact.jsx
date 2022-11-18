@@ -104,7 +104,7 @@ const Contact = () => {
               <PhoneIcon />
               <span>
                 <h3>CALL ME</h3>
-                <a href="Tel: +20 1023634534">mahmoudhelal9888@gmail.com</a>
+                <a href="Tel: +20 1023634534">+20 01023634534</a>
               </span>
             </div>
             <div>

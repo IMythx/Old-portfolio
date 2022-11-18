@@ -181,6 +181,12 @@
     column-gap: 0;
     padding: 0 1rem;
   }
+  .contact > div:last-child > div > div:last-child > a {
+    cursor: none;
+  }
+  .contact > div:last-child > div > div:not(:last-child) > span a {
+    cursor: none;
+  }
 }
 
 @media (max-width: 768px) {

@@ -18,7 +18,7 @@ const PortfolioItem = ({
   const modalCtx = useContext(ModalContext);
 
   return (
-    <li>
+    <li className={classes.parent}>
       {modalCtx.showedModal === name && (
         <Modal>
           <div className={classes.projItem}>
@@ -33,13 +33,13 @@ const PortfolioItem = ({
               <p>
                 <OpenInNewIcon /> Preview:
                 <a href={url} target="a_blank">
-                  {url.replace("https://", "")}
+                  LINK
                 </a>
               </p>
               <p>
                 <GitHubIcon /> Source Code:
                 <a href={sourceCode} target="a_blank">
-                  {sourceCode.replace("https://", "")}
+                  LINK
                 </a>
               </p>
             </div>

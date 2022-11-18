@@ -34,5 +34,6 @@
     -webkit-text-stroke-width: 0;
     text-align: start;
     letter-spacing: 0;
+    padding-left: 0.7rem;
   }
 }

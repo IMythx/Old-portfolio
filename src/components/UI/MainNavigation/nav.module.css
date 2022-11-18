@@ -87,6 +87,9 @@
   .nav p {
     display: none !important;
   }
+  .nav li a {
+    cursor: none;
+  }
   .nav li a svg {
     background-color: #444;
   }

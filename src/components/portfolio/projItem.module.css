@@ -1,3 +1,8 @@
+.parent {
+  animation: animate 650ms linear 1;
+  -webkit-animation: animate 650ms linear 1;
+  animation-delay: 100ms;
+}
 .projItem {
   display: flex;
   justify-content: center;
@@ -38,6 +43,7 @@
 .projItem > div:nth-child(2) p:nth-child(3) a,
 .projItem > div:nth-child(2) p:last-child a {
   color: #ffb400;
+  text-decoration: none;
 }
 .projItem > div:last-child {
   width: 100%;
@@ -53,7 +59,11 @@
   width: 100%;
   min-height: 100%;
 }
-
+@media (max-width: 992px) {
+  .projItem {
+    padding: 1rem;
+  }
+}
 @media (max-width: 580px) {
   .projItem h1 {
     font-size: 1.5rem;
@@ -61,5 +71,25 @@
   .projItem > div:nth-child(2) {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .projItem > div:nth-child(2) p > a {
+    white-space: initial;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(-30px);
+    -webkit-transform: translateX(-30px);
+    -moz-transform: translateX(-30px);
+    -ms-transform: translateX(-30px);
+    -o-transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
   }
 }

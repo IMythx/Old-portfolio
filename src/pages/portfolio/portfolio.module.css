@@ -86,6 +86,12 @@
 .portfolio > ul > li:nth-child(5) > div:last-child::before {
   content: "FOOD-ORDER-APP";
 }
+.portfolio > ul > li:nth-child(6) > div:last-child::before {
+  content: "ADMIN-DASHBOARD";
+}
+.portfolio > ul > li:nth-child(7) > div:last-child::before {
+  content: "AUTHENTICATION-APP";
+}
 
 @keyframes raise {
   from {
@@ -110,6 +116,9 @@
     padding: 0 1rem;
     gap: 1.8rem;
     grid-auto-rows: auto;
+  }
+  .portfolio > ul > li > div:last-child {
+    cursor: none;
   }
 }
 @media (max-width: 580px) {
