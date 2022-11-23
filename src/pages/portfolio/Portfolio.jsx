@@ -27,6 +27,15 @@ const Portfolio = () => {
             url={"https://imythx.github.io/COMPANY-X/"}
           />
           <PortfolioItem
+            name={"DashBoard"}
+            img={DashboardPic}
+            sourceCode={"https://github.com/IMythx/ADMIN-DASHBOARD"}
+            title={"REACT"}
+            language={"Reacr js"}
+            project={"Website"}
+            url={"https://admin-dashboard-1a076.web.app/"}
+          />
+          <PortfolioItem
             name={"LolStats"}
             img={LolPic}
             sourceCode={"https://github.com/IMythx/LoLstats"}
@@ -43,15 +52,6 @@ const Portfolio = () => {
             language={"Javascript"}
             project={"Website"}
             url={"https://imythx.github.io/Bags-Shop/"}
-          />
-          <PortfolioItem
-            name={"DashBoard"}
-            img={DashboardPic}
-            sourceCode={"https://github.com/IMythx/ADMIN-DASHBOARD"}
-            title={"REACT"}
-            language={"Reacr js"}
-            project={"Website"}
-            url={"https://admin-dashboard-1a076.web.app/geography"}
           />
           <PortfolioItem
             name={"Meals"}

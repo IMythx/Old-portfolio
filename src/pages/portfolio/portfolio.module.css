@@ -75,19 +75,19 @@
   content: "COMPANY-X";
 }
 .portfolio > ul > li:nth-child(2) > div:last-child::before {
-  content: "LOL-STATS";
+  content: "ADMIN-DASHBOARD";
 }
 .portfolio > ul > li:nth-child(3) > div:last-child::before {
-  content: "BAGS-SHOP";
+  content: "LOL-STATS";
 }
 .portfolio > ul > li:nth-child(4) > div:last-child::before {
-  content: "ADMIN-DASHBOARD";
+  content: "BAGS-SHOP";
 }
 .portfolio > ul > li:nth-child(5) > div:last-child::before {
   content: "FOOD-ORDER-APP";
 }
 .portfolio > ul > li:nth-child(6) > div:last-child::before {
-  content: "ADMIN-DASHBOARD";
+  content: "MY-PORTFOLIO";
 }
 .portfolio > ul > li:nth-child(7) > div:last-child::before {
   content: "AUTHENTICATION-APP";
@@ -122,6 +122,9 @@
   }
 }
 @media (max-width: 580px) {
+  .portfolio {
+    padding-top: 0;
+  }
   .portfolio ul {
     grid-template-columns: 1fr;
   }

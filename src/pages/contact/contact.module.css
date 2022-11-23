@@ -196,6 +196,9 @@
   }
 }
 @media (max-width: 580px) {
+  .contact {
+    padding-top: 0;
+  }
   .contact > div:last-child > div > h1 {
     font-size: 1.4rem;
   }

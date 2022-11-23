@@ -235,6 +235,9 @@
   }
 }
 @media (max-width: 580px) {
+  .about {
+    padding-top: 0;
+  }
   .about .img {
     display: flex;
     border-radius: 50%;

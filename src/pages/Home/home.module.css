@@ -2,6 +2,7 @@
   display: flex;
   background-image: linear-gradient(77deg, #ffb400 22.83%, #000 23%);
   min-height: 100vh;
+  justify-content: center;
 }
 .home > div {
   display: flex;
@@ -12,6 +13,7 @@
   animation: raise 0.9s ease-in-out 1;
   -webkit-animation: raise 0.9s ease-in-out 1;
   width: 100%;
+  max-width: 1600px;
 }
 @keyframes raise {
   from {
@@ -31,7 +33,8 @@
 }
 
 .home > div > div:first-child {
-  width: 65vw;
+  width: 950px;
+  max-width: 500px;
   display: flex;
   box-shadow: 0 0 8px #000;
   border-radius: 20px;
