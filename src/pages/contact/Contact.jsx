@@ -85,7 +85,7 @@ const Contact = () => {
         <Header title={"GET IN"} subTitle={"TOUCH"} />
         <div>
           <div>
-            <h1>DON'T BE SHY !</h1>
+            <h1>GET IN TOUCH !</h1>
             <p>
               Feel free to get in touch with me. I am always open to discussing
               new projects, creative ideas or opportunities to be part of your

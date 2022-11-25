@@ -8,9 +8,10 @@
   align-items: flex-start;
   padding: 0 3.5rem;
   color: #fff;
-  margin: 3rem 0 6rem;
+  margin: 3rem auto 6rem;
   animation: raise 0.9s ease-in-out 1;
   -webkit-animation: raise 0.9s ease-in-out 1;
+  max-width: 1600px;
 }
 
 .contact > div:last-child > div {
@@ -133,6 +134,7 @@
   border: none;
   cursor: none;
   font-size: 0.9rem;
+  cursor: text;
 }
 .contact > div:last-child > form fieldset:nth-child(1),
 .contact > div:last-child > form fieldset:nth-child(2) {

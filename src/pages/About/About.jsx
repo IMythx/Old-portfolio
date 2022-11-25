@@ -4,7 +4,11 @@ import Header from "../../components/global/Header";
 import classes from "./about.module.css";
 import img2 from "../../assets/img2.jpg";
 import DownloadIcon from "@mui/icons-material/Download";
-import ProgressCircle from "../../components/global/ProgressCircle";
+import HtmlIcon from "@mui/icons-material/Html";
+import CssIcon from "@mui/icons-material/Css";
+import JavascriptIcon from "@mui/icons-material/Javascript";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import InfoItem from "../../components/about/InfoItem";
 import useQuery from "../../hooks/mediaQueries";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
@@ -64,24 +68,19 @@ const About = ({ isModal = false }) => {
           <h1>MY SKILLS</h1>
           <div>
             <div>
-              <ProgressCircle progress={"0.97"} />
-              <p>HTML</p>
+              <HtmlIcon />
             </div>
             <div>
-              <ProgressCircle progress={"0.70"} />
-              <p>CSS</p>
+              <CssIcon />
             </div>
             <div>
-              <ProgressCircle progress={"0.85"} />
-              <p>JAVASCRIPT</p>
+              <JavascriptIcon />
             </div>
             <div>
-              <ProgressCircle progress={"0.90"} />
-              <p>REACT JS</p>
+              <FaReact />
             </div>
             <div>
-              <ProgressCircle progress={"0.65"} />
-              <p>NEXT JS</p>
+              <SiNextdotjs />
             </div>
           </div>
         </div>

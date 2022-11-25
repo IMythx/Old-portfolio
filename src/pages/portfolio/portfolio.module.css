@@ -9,9 +9,10 @@
   grid-auto-rows: 200px;
   gap: 2rem;
   padding: 0 3rem;
-  margin: 3rem 0 6rem;
+  margin: 3rem auto 6rem;
   animation: raise 0.9s ease-in-out 1;
   -webkit-animation: raise 0.9s ease-in-out 1;
+  max-width: 1600px;
 }
 .portfolio > ul > li {
   overflow: hidden;
