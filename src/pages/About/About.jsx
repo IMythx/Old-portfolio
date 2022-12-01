@@ -61,7 +61,7 @@ const About = ({ isModal = false }) => {
           </div>
           <div>
             <InfoItem title={"1"} subTitle={"YEARS OF PROGRAMMING KNOWLEDGE"} />
-            <InfoItem title={"10"} subTitle={"GITHUB REPOSITORIES"} />
+            <InfoItem title={"10"} subTitle={"AWESOME PROJECTS"} />
           </div>
         </div>
         <div className={classes.rowTwo}>
