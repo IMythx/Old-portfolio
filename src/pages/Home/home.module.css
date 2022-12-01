@@ -33,8 +33,7 @@
 }
 
 .home > div > div:first-child {
-  width: 950px;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   box-shadow: 0 0 8px #000;
   border-radius: 20px;
@@ -103,7 +102,7 @@
     gap: 1rem;
   }
   .home > div > div:first-child {
-    width: 20rem;
+    max-width: 20rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -138,7 +137,7 @@
     padding: 1rem 0 5rem;
   }
   .home > div > div:first-child {
-    width: 15rem;
+    max-width: 15rem;
   }
   .home > div > div:last-child h1 {
     font-size: 2rem;
