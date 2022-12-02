@@ -53,11 +53,16 @@
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   overflow: hidden;
-  max-height: 450px;
+  max-height: 420px;
 }
 .projItem > div:last-child img {
   width: 100%;
   min-height: 100%;
+}
+@media (min-width: 1300px) {
+  .projItem > div:last-child {
+    max-height: 850px;
+  }
 }
 @media (max-width: 992px) {
   .projItem {

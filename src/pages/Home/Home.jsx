@@ -27,7 +27,7 @@ const Home = () => {
           </div>
           <div>
             <h1>
-              I'M MAHMOUD HELAL <span>FRONT END DEVELOPER</span>
+              I'M MAHMOUD HELAL <span>FRONTEND DEVELOPER</span>
             </h1>
             <p>
               I am a Computer Science enthusiast. I am passionate about Web

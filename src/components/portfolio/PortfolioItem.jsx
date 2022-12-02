@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { Fragment, useContext } from "react";
 import { ModalContext } from "../../store/modal-context";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CodeIcon from "@mui/icons-material/Code";
@@ -18,7 +18,7 @@ const PortfolioItem = ({
   const modalCtx = useContext(ModalContext);
 
   return (
-    <li className={classes.parent}>
+    <Fragment>
       {modalCtx.showedModal === name && (
         <Modal>
           <div className={classes.projItem}>
@@ -49,10 +49,12 @@ const PortfolioItem = ({
           </div>
         </Modal>
       )}
-      <div onClick={() => modalCtx.showModal(name)}>
-        <img src={img} alt=""></img>
-      </div>
-    </li>
+      <li className={classes.parent}>
+        <div onClick={() => modalCtx.showModal(name)}>
+          <img src={img} alt=""></img>
+        </div>
+      </li>
+    </Fragment>
   );
 };
 

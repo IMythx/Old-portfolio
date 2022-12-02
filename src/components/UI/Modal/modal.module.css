@@ -75,6 +75,7 @@
     opacity: 1;
   }
 }
+
 @media (max-width: 992px) {
   .modal:not(.isHome) {
     top: 20vh;

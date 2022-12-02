@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import Portfolio from "./pages/portfolio/Portfolio";
 import Contact from "./pages/contact/Contact";
 const App = () => {
-  const { isTablet } = useQuery();
+  const { isTablet, isMobile } = useQuery();
   return (
     <div className="App">
       {!isTablet && <Cursor />}
