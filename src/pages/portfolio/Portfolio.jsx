@@ -9,6 +9,7 @@ import DashboardPic from "../../assets/dashboard.jpg";
 import MealsPic from "../../assets/meals.jpg";
 import PortfolioPic from "../../assets/Portfolio.jpg";
 import AuthxPic from "../../assets/authx.jpg";
+import WatchesPic from "../../assets/Watches.jpg";
 import PortfolioItem from "../../components/portfolio/PortfolioItem";
 const Portfolio = () => {
   return (
@@ -17,6 +18,15 @@ const Portfolio = () => {
       <section className={classes.portfolio}>
         <Header title={"MY"} subTitle={"PORTFOLIO"} />
         <ul>
+          <PortfolioItem
+            name={"React-Watches"}
+            img={WatchesPic}
+            sourceCode={"https://github.com/IMythx/React-Ecommerce"}
+            title={"REACT"}
+            language={"REACT JS"}
+            project={"Website"}
+            url={"https://react-ec-shop.web.app/"}
+          />
           <PortfolioItem
             name={"Company-X"}
             img={CompanyPic}

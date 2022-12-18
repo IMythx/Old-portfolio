@@ -73,24 +73,27 @@
 }
 
 .portfolio > ul > li:nth-child(1) > div:last-child::before {
-  content: "COMPANY-X";
+  content: "React-Watches";
 }
 .portfolio > ul > li:nth-child(2) > div:last-child::before {
-  content: "ADMIN-DASHBOARD";
+  content: "COMPANY-X";
 }
 .portfolio > ul > li:nth-child(3) > div:last-child::before {
-  content: "LOL-STATS";
+  content: "ADMIN-DASHBOARD";
 }
 .portfolio > ul > li:nth-child(4) > div:last-child::before {
-  content: "BAGS-SHOP";
+  content: "LOL-STATS";
 }
 .portfolio > ul > li:nth-child(5) > div:last-child::before {
-  content: "FOOD-ORDER-APP";
+  content: "BAGS-SHOP";
 }
 .portfolio > ul > li:nth-child(6) > div:last-child::before {
-  content: "MY-PORTFOLIO";
+  content: "FOOD-ORDER-APP";
 }
 .portfolio > ul > li:nth-child(7) > div:last-child::before {
+  content: "MY-PORTFOLIO";
+}
+.portfolio > ul > li:nth-child(8) > div:last-child::before {
   content: "AUTHENTICATION-APP";
 }
 
