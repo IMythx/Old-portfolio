@@ -10,6 +10,7 @@ import MealsPic from "../../assets/meals.jpg";
 import PortfolioPic from "../../assets/Portfolio.jpg";
 import AuthxPic from "../../assets/authx.jpg";
 import WatchesPic from "../../assets/Watches.jpg";
+import JewelleryPic from "../../assets/jewellery.jpg";
 import PortfolioItem from "../../components/portfolio/PortfolioItem";
 const Portfolio = () => {
   return (
@@ -18,6 +19,15 @@ const Portfolio = () => {
       <section className={classes.portfolio}>
         <Header title={"MY"} subTitle={"PORTFOLIO"} />
         <ul>
+          <PortfolioItem
+            name={"Jewellery-Store"}
+            img={JewelleryPic}
+            sourceCode={"https://github.com/IMythx/Jewellery-Store"}
+            title={"REACT"}
+            language={"REACT JS"}
+            project={"Website"}
+            url={"https://jewellery--store.web.app"}
+          />
           <PortfolioItem
             name={"React-Watches"}
             img={WatchesPic}
